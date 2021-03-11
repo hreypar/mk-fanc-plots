@@ -1,0 +1,35 @@
+# plot distance decay for MCF7 and ME 
+# at different resolutions
+#
+
+# plot at megabase scale
+#
+fanc expected -l "ME 5Mb" "MCF7 5Mb" "ME 1Mb" "MCF7 1Mb" \
+	-c chr1 -p results/expected_distance_chr1_MB.png \
+	me-binned/mammary-epithelial_5mb.hic \
+	mcf7-binned/MCF7_5mb.hic \
+	me-binned/mammary-epithelial_1mb.hic \
+	mcf7-binned/MCF7_1mb.hic \
+	results/expected_distance_chr1_MB.txt
+
+# plot at hundreds of kb scale
+#
+fanc expected -l "ME 500kb" "MCF7 500kb" "ME 100kb" "MCF7 100kb" \
+	-c chr1 -p results/expected_distance_chr1_100KB.png \
+	me-binned/mammary-epithelial_500kb.hic \
+	mcf7-binned/MCF7_500kb.hic \
+	me-binned/mammary-epithelial_100kb.hic \
+	mcf7-binned/MCF7_100kb.hic \
+	results/expected_distance_chr1_100KB.txt  
+
+
+# plot at tens of kb scale
+#
+fanc expected -l "ME 50kb" "MCF7 50kb" "ME 10kb" "MCF7 10kb" \
+	-c chr1 -p results/expected_distance_chr1_10KB.png \
+	me-binned/mammary-epithelial_50kb.hic \
+	mcf7-binned/MCF7_50kb.hic \
+	me-binned/mammary-epithelial_10kb.hic \
+	mcf7-binned/MCF7_10kb.hic \
+	results/expected_distance_chr1_10KB.txt
+
