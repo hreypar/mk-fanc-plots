@@ -23,3 +23,11 @@ results/%:	data/%.hic
 		-vmax $VMAX \
 		$prereq
 
+	fancplot \
+		-o $target"_square_heatmap_OBEX_"$CHR".png" \
+		$CHR \
+		-p square \
+		-vmax $VMAX_OBEX \
+		-vmin $VMIN_OBEX \
+		-e $prereq
+
