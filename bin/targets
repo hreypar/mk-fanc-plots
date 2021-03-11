@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# USAGE:
+# bin/targets
+
+find -L data/ \
+	-type f \
+	-name "*.hic" \
+| sed -r \
+	-e 's#^data/#results/#' \
+	-e 's#.hic##' \
+| sort -u
+
